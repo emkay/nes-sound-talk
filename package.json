@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "name": "nes-sound-talk",
+  "version": "1.0.0",
+  "description": "NES Sound Talk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emkay/nes-sound-talk.git"
+  },
+  "keywords": [
+    "nes",
+    "sound"
+  ],
+  "author": "Michael Matuzak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emkay/nes-sound-talk/issues"
+  },
+  "homepage": "https://github.com/emkay/nes-sound-talk"
+}
