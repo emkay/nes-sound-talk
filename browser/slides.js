@@ -6,7 +6,14 @@ var slides = [
 ];
 
 function start(state) {
-    return h('h1.press-start', 'HELLO WORLDS');
+    return h('div#app', [
+        h('div.main', [
+            h('h1.press-start', '8-BIT SOUND WITH THE NES AND JAVASCRIPT'),
+            h('div.press-start-container', [
+                h('p.press-start', 'PRESS START')
+            ])
+        ])
+    ]);
 }
 
 function Slides(state) {

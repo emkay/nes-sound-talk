@@ -1,3 +1,18 @@
 .press-start {
     font-family: press-start;
+    font-size: 3em;
+}
+
+p.press-start {
+    font-size: 2em;
+}
+
+.press-start-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.main {
+    width: 75%;
+    margin: 0 auto;
 }
