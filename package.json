@@ -5,7 +5,11 @@
   "description": "NES Sound Talk",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-js": "browserify browser/main.js > static/js/bundle.js",
+    "watch-js": "watchify browser/main.js -o static/js/bundle.js -dv",
+    "start-dev": "npm run watch-js & nodemon server",
+    "start": "npm run build-js && node server"
   },
   "repository": {
     "type": "git",
@@ -20,5 +24,17 @@
   "bugs": {
     "url": "https://github.com/emkay/nes-sound-talk/issues"
   },
-  "homepage": "https://github.com/emkay/nes-sound-talk"
+  "homepage": "https://github.com/emkay/nes-sound-talk",
+  "dependencies": {
+    "frp-keyboard": "^1.4.1",
+    "keycode": "^2.1.0",
+    "mercury": "^14.0.0",
+    "observ": "^0.2.0",
+    "st": "^0.5.3",
+    "xtend": "^4.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^10.0.0",
+    "watchify": "^3.2.1"
+  }
 }
