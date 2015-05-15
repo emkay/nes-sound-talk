@@ -1,7 +1,38 @@
+## The Nintendo Entertainment System
+
+Today we are going to go over the details of how sound works on a piece of hardware from the 1980s. This hardware is the Nintendo Entertainment System. Specifically we are going to talk about the 2A03 chip, how it works, and what limitations and possibilities you have while working with it. But first I'd like to answer a few questions and explain the goals of what I was personally trying to do.
+
 ## Goals
 
 1. Make awesome 8-bit Music
 2. Use JavaScript
+
+## The Questions I would get
+
+### Why?
+
+* Trackers already exist
+* Midi NES exists
+
+Those are not JavaScript.
+
+### Are you trying to build a sequencer/tracker?
+
+That might be a long term goal. Important thing is to first build a set of tools in JavaScript to allow us to work with the NES in various ways.
+
+Remember the goal is to get this stuff working in JavaScript.
+
+### Why JavaScript?
+
+Once you get something to JavaScript you can get it into a web browser. There are already assemblers, emulators, and other tools written for the NES in JavaScript. Having these things as modules would give you the tool set to build things like trackers/sequencers in a web browser, possibly using web audio.
+
+## This generation of video games
+
+* Shovel Knight
+* [Star Versus](http://starversus.com/)
+
+The way video game art was made in the 1980s has had a huge influence on the way video game art is made today.
+
 
 ## First Approach
 
