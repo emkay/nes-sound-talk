@@ -9,14 +9,14 @@ var slides = [
     the80s4,
     theNes,
     goals,
-    goals2,
     attempt,
+    attempt2,
     soundFromThe80s,
     soundFromThe80s2,
     soundFromThe80s3,
     soundFromThe80s4,
     soundFromThe80s5,
-    the2A03,
+    soundFromThe80s6,
     photoSources
 ];
 
@@ -106,15 +106,28 @@ function soundFromThe80s(state) {
         h('div.main', [
             h('div.row', [
                 h('div.item', [
-                    h('h1', 'Sound from the 1980s'),
-                    h('h2', 'The 2A03')
+                    h('img', {src: '/static/images/the-1980s.jpg'})
                 ])
             ])
         ])
     ]);
 }
 
-function soundFromThe80s2(state) {
+function soundFromThe80s3(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Sound from the 1980s'),
+                    h('h2', 'The 2A03'),
+                    h('img', {src: '/static/images/2A07.jpg'})
+                ])
+            ])
+        ])
+    ]);
+}
+
+function soundFromThe80s3(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
@@ -129,23 +142,21 @@ function soundFromThe80s2(state) {
     ]);
 }
 
-function soundFromThe80s3(state) {
+function soundFromThe80s4(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
                 h('div.item', [
                     h('h1', 'Sound from the 1980s'),
                     h('h2', 'The 2A03'),
-                    h('ul', [
-                        h('li', 'The APU of the NES')
-                    ])
+                    h('h2', 'The APU of the NES')
                 ])
             ])
         ])
     ]);
 }
 
-function soundFromThe80s4(state) {
+function soundFromThe80s5(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
@@ -162,7 +173,7 @@ function soundFromThe80s4(state) {
     ]);
 }
 
-function soundFromThe80s5(state) {
+function soundFromThe80s6(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
@@ -182,32 +193,7 @@ function soundFromThe80s5(state) {
     ]);
 }
 
-function the2A03(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', '2A03'),
-                    h('img', {src: '/static/images/2A07.jpg'})
-                ])
-            ])
-        ])
-    ]);
-}
-
 function goals(state) {
-  return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'Initial Goals')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function goals2(state) {
   return h('div#app', [
         h('div.main', [
             h('div.row', [
@@ -235,14 +221,15 @@ function attempt(state) {
     ]);
 }
 
-function goals3(state) {
+function attempt2(state) {
   return h('div#app', [
         h('div.main', [
             h('div.row', [
                 h('div.item', [
-                    h('h1', 'Initial Goals'),
-                    h('h2', '8-bit Music'),
-                    h('h2', 'JavaScript')
+                    h('h1', 'Second Attempt'),
+                    h('h2', [h('strike', 'Sequencer')]),
+                    h('h2', [h('strike', 'NES Samples')]),
+                    h('h2', 'Compiler')
                 ])
             ])
         ])
