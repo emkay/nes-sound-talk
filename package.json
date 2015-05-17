@@ -29,6 +29,7 @@
     "frp-keyboard": "^1.4.1",
     "keycode": "^2.1.0",
     "mercury": "^14.0.0",
+    "nesly-sound": "^2.7.0",
     "observ": "^0.2.0",
     "st": "^0.5.3",
     "xtend": "^4.0.0"

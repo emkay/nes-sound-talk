@@ -17,6 +17,10 @@ var slides = [
     soundFromThe80s4,
     soundFromThe80s5,
     soundFromThe80s6,
+    square,
+    square2,
+    triangle,
+    noise,
     photoSources
 ];
 
@@ -101,6 +105,49 @@ function theNes(state) {
     ]);
 }
 
+function goals(state) {
+  return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Initial Goals'),
+                    h('h2', '8-bit Music'),
+                    h('h2', 'JavaScript')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function attempt(state) {
+  return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'First Attempt'),
+                    h('h2', 'Sequencer'),
+                    h('h2', 'NES Samples')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function attempt2(state) {
+  return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Second Attempt'),
+                    h('h2', [h('strike', 'Sequencer')]),
+                    h('h2', [h('strike', 'NES Samples')]),
+                    h('h2', 'Compiler')
+                ])
+            ])
+        ])
+    ]);
+}
+
 function soundFromThe80s(state) {
     return h('div#app', [
         h('div.main', [
@@ -113,7 +160,7 @@ function soundFromThe80s(state) {
     ]);
 }
 
-function soundFromThe80s3(state) {
+function soundFromThe80s2(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
@@ -163,10 +210,8 @@ function soundFromThe80s5(state) {
                 h('div.item', [
                     h('h1', 'Sound from the 1980s'),
                     h('h2', 'The 2A03'),
-                    h('ul', [
-                        h('li', 'The APU of the NES'),
-                        h('li', '5 Channels')
-                    ])
+                    h('h2', 'The APU of the NES'),
+                    h('h2', '5 Channels')
                 ])
             ])
         ])
@@ -193,43 +238,58 @@ function soundFromThe80s6(state) {
     ]);
 }
 
-function goals(state) {
-  return h('div#app', [
+function square(state) {
+    return h('div#app', [
         h('div.main', [
             h('div.row', [
                 h('div.item', [
-                    h('h1', 'Initial Goals'),
-                    h('h2', '8-bit Music'),
-                    h('h2', 'JavaScript')
+                    h('h1', 'Square'),
+                    h('h2', '54.6 Hz to 12.4 KHz'),
+                    h('h2', 'Duty Cycle'),
+                    h('h2', 'Frequency Sweeps')
                 ])
             ])
         ])
     ]);
 }
 
-function attempt(state) {
-  return h('div#app', [
+function square2(state) {
+    return h('div#app', [
         h('div.main', [
             h('div.row', [
                 h('div.item', [
-                    h('h1', 'First Attempt'),
-                    h('h2', 'Sequencer'),
-                    h('h2', 'NES Samples')
+                    h('h1', 'Square'),
+                    h('h2', '54.6 Hz to 12.4 KHz'),
+                    h('h2', 'Duty Cycle'),
+                    h('h2', [h('strike', 'Frequency Sweeps')])
                 ])
             ])
         ])
     ]);
 }
 
-function attempt2(state) {
-  return h('div#app', [
+function triangle(state) {
+    return h('div#app', [
         h('div.main', [
             h('div.row', [
                 h('div.item', [
-                    h('h1', 'Second Attempt'),
-                    h('h2', [h('strike', 'Sequencer')]),
-                    h('h2', [h('strike', 'NES Samples')]),
-                    h('h2', 'Compiler')
+                    h('h1', 'Triangle'),
+                    h('h2', '27.3 Hz to 55.9 KHz'),
+                    h('h2', 'Volume on/off')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function noise(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Noise'),
+                    h('h2', 'Produces random frequencies'),
+                    h('h2', 'Sounds sort of like drums')
                 ])
             ])
         ])
