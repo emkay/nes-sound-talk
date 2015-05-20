@@ -3,12 +3,22 @@ var h = mercury.h;
 
 var slides = [
     start,
+    theNes,
     the80s,
     the80s2,
-    the80s3,
-    the80s4,
-    theNes,
     goals,
+    why,
+    why2,
+    why3,
+    why4,
+    whyJs,
+    whyJs2,
+    relevant,
+    relevant2,
+    relevant3,
+    relevant4,
+    relevant5,
+    relevant6,
     attempt,
     attempt2,
     soundFromThe80s,
@@ -16,13 +26,27 @@ var slides = [
     soundFromThe80s3,
     soundFromThe80s4,
     soundFromThe80s5,
-    soundFromThe80s6,
+    thePlan,
+    thePlan2,
+    thePlan3,
+    thePlan4,
+    thePlan5,
     square,
     square2,
+    squareDemo,
     triangle,
+    triangleDemo,
     noise,
+    noiseDemo,
+    technique,
+    technique2,
+    technique3,
+    technique4,
+    demos,
     photoSources
 ];
+
+console.log('How many slides: ', slides.length);
 
 function start(state) {
     return h('div#app', [
@@ -41,14 +65,24 @@ function start(state) {
     ]);
 }
 
+function start2(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [h('h1', 'The Latest in 1980s Tech')])
+            ])
+        ])
+    ]);
+}
+
 function the80s(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
-                h('div.item', [h('h1', 'The 80s')])
+                h('div.item', [h('h1', 'Video Games of the 80s')])
             ]),
             h('div.row', [
-                h('img', {src: '/static/images/80s-show-movies.jpg'})
+                h('img', {src: '/static/images/smb.png'})
             ])
         ])
     ]);
@@ -58,36 +92,10 @@ function the80s2(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
-                h('div.item', [h('h1', 'The 80s')])
+                h('div.item', [h('h1', 'Video Games of the 80s')])
             ]),
             h('div.row', [
-                h('img', {src: '/static/images/a-team.jpg'})
-            ])
-        ])
-    ]);
-}
-
-function the80s3(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [h('h1', 'The 80s')])
-            ]),
-            h('div.row', [
-                h('img', {src: '/static/images/different-strokes.jpg'})
-            ])
-        ])
-    ]);
-}
-
-function the80s4(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [h('h1', 'The 80s')])
-            ]),
-            h('div.row', [
-                h('img', {src: '/static/images/family-ties.jpg'})
+                h('img', {src: '/static/images/zelda.jpg'})
             ])
         ])
     ]);
@@ -113,6 +121,167 @@ function goals(state) {
                     h('h1', 'Initial Goals'),
                     h('h2', '8-bit Music'),
                     h('h2', 'JavaScript')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function why(state) {
+   return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Why?')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function why2(state) {
+   return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Why?'),
+                    h('h2', 'Trackers')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function why3(state) {
+   return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Why?'),
+                    h('h2', 'Trackers'),
+                    h('h2', 'MIDI')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function why4(state) {
+   return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Why?'),
+                    h('h2', 'Trackers'),
+                    h('h2', 'MIDI'),
+                    h('h2', 'Not JS')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function whyJs(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Why JS?')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function whyJs2(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Why JS?'),
+                    h('h2', 'Node.js'),
+                    h('h2', 'Browsers')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function relevant(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Is 8-bit art relevant?')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function relevant2(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Is 8-bit art relevant?'),
+                    h('h2', 'Shovel Knight')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function relevant3(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Is 8-bit art relevant?'),
+                    h('h2', 'Shovel Knight'),
+                    h('img', {src: '/static/images/shovel-knight.png'})
+                ])
+            ])
+        ])
+    ]);
+}
+
+function relevant4(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Is 8-bit art relevant?'),
+                    h('h2', 'Shovel Knight'),
+                    h('img', {src: '/static/images/shovel-knight2.png'})
+                ])
+            ])
+        ])
+    ]);
+}
+
+function relevant5(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Shovel Knight'),
+                    h('h2', '8-bit Art/Music'),
+                    h('h2', 'OST works on the NES')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function relevant6(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Is 8-bit art relevant?'),
+                    h('h2', 'Star Versus'),
+                    h('img', {src: '/static/images/star-versus.jpg'})
                 ])
             ])
         ])
@@ -153,18 +322,6 @@ function soundFromThe80s(state) {
         h('div.main', [
             h('div.row', [
                 h('div.item', [
-                    h('img', {src: '/static/images/the-1980s.jpg'})
-                ])
-            ])
-        ])
-    ]);
-}
-
-function soundFromThe80s2(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
                     h('h1', 'Sound from the 1980s'),
                     h('h2', 'The 2A03'),
                     h('img', {src: '/static/images/2A07.jpg'})
@@ -174,7 +331,7 @@ function soundFromThe80s2(state) {
     ]);
 }
 
-function soundFromThe80s3(state) {
+function soundFromThe80s2(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
@@ -189,6 +346,20 @@ function soundFromThe80s3(state) {
     ]);
 }
 
+function soundFromThe80s3(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Sound from the 1980s'),
+                    h('h2', 'The 2A03'),
+                    h('h2', 'The microprocessor of the NES.')
+                ])
+            ])
+        ])
+    ]);
+}
+
 function soundFromThe80s4(state) {
     return h('div#app', [
         h('div.main', [
@@ -196,21 +367,6 @@ function soundFromThe80s4(state) {
                 h('div.item', [
                     h('h1', 'Sound from the 1980s'),
                     h('h2', 'The 2A03'),
-                    h('h2', 'The APU of the NES')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function soundFromThe80s5(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'Sound from the 1980s'),
-                    h('h2', 'The 2A03'),
-                    h('h2', 'The APU of the NES'),
                     h('h2', '5 Channels')
                 ])
             ])
@@ -218,7 +374,7 @@ function soundFromThe80s5(state) {
     ]);
 }
 
-function soundFromThe80s6(state) {
+function soundFromThe80s5(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
@@ -232,6 +388,105 @@ function soundFromThe80s6(state) {
                         h('li', 'Noise'),
                         h('li', 'Sampler')
                     ])
+                ])
+            ])
+        ])
+    ]);
+}
+
+function thePlan(state) {
+  return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'The Plan'),
+                    h('h2', 'Make a beep')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function thePlan2(state) {
+  return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'The Plan'),
+                    h('h2', 'Make a beep'),
+                    h('h2', 'Lots of asm')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function thePlan3(state) {
+  return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'The Plan'),
+                    h('h2', 'Make a beep'),
+                    h('h2', 'Lots of asm'),
+                    h('h2', 'But it worked')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function thePlan3(state) {
+  return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'The Plan'),
+                    h('h2', 'Make a beep'),
+                    h('h2', 'Lots of asm'),
+                    h('h2', 'But it worked')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function thePlan4(state) {
+  return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'The Plan'),
+                    h('h2', 'Build a Sound Engine')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function thePlan5(state) {
+  return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'The Plan'),
+                    h('h2', 'Build a Sound Engine'),
+                    h('h2', 'ASM')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function thePlan6(state) {
+  return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'The Plan'),
+                    h('h2', 'Build a Sound Engine'),
+                    h('h2', 'ASM'),
+                    h('h2', 'JS API')
                 ])
             ])
         ])
@@ -268,6 +523,20 @@ function square2(state) {
     ]);
 }
 
+function squareDemo(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Square'),
+                    h('h2', 'Demo')
+                ])
+            ])
+        ])
+    ]);
+}
+
+
 function triangle(state) {
     return h('div#app', [
         h('div.main', [
@@ -282,6 +551,19 @@ function triangle(state) {
     ]);
 }
 
+function triangleDemo(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Triangle'),
+                    h('h2', 'Demo')
+                ])
+            ])
+        ])
+    ]);
+}
+
 function noise(state) {
     return h('div#app', [
         h('div.main', [
@@ -290,6 +572,85 @@ function noise(state) {
                     h('h1', 'Noise'),
                     h('h2', 'Produces random frequencies'),
                     h('h2', 'Sounds sort of like drums')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function noiseDemo(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Noise'),
+                    h('h2', 'Demo')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function technique(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Technique')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function technique2(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Technique'),
+                    h('h2', 'Chords')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function technique3(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Technique'),
+                    h('h2', [h('strike', 'Chords')]),
+                    h('h2', 'Monophonic')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function technique4(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Technique'),
+                    h('h2', [h('strike', 'Chords')]),
+                    h('h2', 'Monophonic'),
+                    h('h2', 'Arpeggios')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function demos(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Demos')
                 ])
             ])
         ])
