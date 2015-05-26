@@ -3,34 +3,19 @@ var h = mercury.h;
 
 var slides = [
     start,
+    what,
+    what2,
+    what3,
     theNes,
-    the80s,
-    the80s2,
-    goals,
+    goal,
+    goal2,
     why,
     why2,
     why3,
     why4,
-    whyJs,
-    whyJs2,
-    relevant,
-    relevant2,
-    relevant3,
-    relevant4,
-    relevant5,
-    relevant6,
-    attempt,
-    attempt2,
-    soundFromThe80s,
-    soundFromThe80s2,
-    soundFromThe80s3,
-    soundFromThe80s4,
-    soundFromThe80s5,
-    thePlan,
-    thePlan2,
-    thePlan3,
-    thePlan4,
-    thePlan5,
+    how,
+    how2,
+    channels,
     square,
     square2,
     squareDemo,
@@ -42,8 +27,11 @@ var slides = [
     technique2,
     technique3,
     technique4,
-    demos,
-    photoSources
+    theFuture,
+    theFuture2,
+    theFuture3,
+    help,
+    demos
 ];
 
 console.log('How many slides: ', slides.length);
@@ -57,45 +45,47 @@ function start(state) {
 
             h('div.row', [
                 h('div.item', [
-                    h('p.press-start', 'By Michael Matuzak'),
-                    h('p.press-start', 'PRESS START')
+                    h('p.press-start', 'By Michael Matuzak')
                 ])
             ])
         ])
     ]);
 }
 
-function start2(state) {
+function what(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
-                h('div.item', [h('h1', 'The Latest in 1980s Tech')])
+                h('div.item', [
+                    h('h1', 'What?')
+                ])
             ])
         ])
     ]);
 }
 
-function the80s(state) {
+function what2(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
-                h('div.item', [h('h1', 'Video Games of the 80s')])
-            ]),
-            h('div.row', [
-                h('img', {src: '/static/images/smb.png'})
+                h('div.item', [
+                    h('h1', 'What?'),
+                    h('h2', '1980s music tech')
+                ])
             ])
         ])
     ]);
 }
 
-function the80s2(state) {
+function what3(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
-                h('div.item', [h('h1', 'Video Games of the 80s')])
-            ]),
-            h('div.row', [
-                h('img', {src: '/static/images/zelda.jpg'})
+                h('div.item', [
+                    h('h1', 'What?'),
+                    h('h2', '1980s music tech'),
+                    h('h2', 'JavaScript')
+                ])
             ])
         ])
     ]);
@@ -107,20 +97,6 @@ function theNes(state) {
             h('div.row', [
                 h('div.item', [
                     h('img', {src: '/static/images/nes.jpg'})
-                ])
-            ])
-        ])
-    ]);
-}
-
-function goals(state) {
-  return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'Initial Goals'),
-                    h('h2', '8-bit Music'),
-                    h('h2', 'JavaScript')
                 ])
             ])
         ])
@@ -145,7 +121,7 @@ function why2(state) {
             h('div.row', [
                 h('div.item', [
                     h('h1', 'Why?'),
-                    h('h2', 'Trackers')
+                    h('h2', 'Music')
                 ])
             ])
         ])
@@ -158,8 +134,8 @@ function why3(state) {
             h('div.row', [
                 h('div.item', [
                     h('h1', 'Why?'),
-                    h('h2', 'Trackers'),
-                    h('h2', 'MIDI')
+                    h('h2', 'Music'),
+                    h('h2', 'Nostalgia')
                 ])
             ])
         ])
@@ -172,321 +148,73 @@ function why4(state) {
             h('div.row', [
                 h('div.item', [
                     h('h1', 'Why?'),
-                    h('h2', 'Trackers'),
-                    h('h2', 'MIDI'),
-                    h('h2', 'Not JS')
+                    h('h2', 'Music'),
+                    h('h2', 'Nostalgia'),
+                    h('h2', 'JavaScript')
                 ])
             ])
         ])
     ]);
 }
 
-function whyJs(state) {
+function goal(state) {
+   return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'The Goal')
+                ])
+            ])
+        ])
+    ]);
+ 
+}
+
+function goal2(state) {
+   return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Make it easy to write music for a Nintendo.')
+                ])
+            ])
+        ])
+    ]);
+ 
+}
+
+function how(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
                 h('div.item', [
-                    h('h1', 'Why JS?')
+                    h('h1', 'How?')
                 ])
             ])
         ])
     ]);
 }
 
-function whyJs2(state) {
+function how2(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
                 h('div.item', [
-                    h('h1', 'Why JS?'),
-                    h('h2', 'Node.js'),
-                    h('h2', 'Browsers')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function relevant(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'Is 8-bit art relevant?')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function relevant2(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'Is 8-bit art relevant?'),
-                    h('h2', 'Shovel Knight')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function relevant3(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'Is 8-bit art relevant?'),
-                    h('h2', 'Shovel Knight'),
-                    h('img', {src: '/static/images/shovel-knight.png'})
-                ])
-            ])
-        ])
-    ]);
-}
-
-function relevant4(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'Is 8-bit art relevant?'),
-                    h('h2', 'Shovel Knight'),
-                    h('img', {src: '/static/images/shovel-knight2.png'})
-                ])
-            ])
-        ])
-    ]);
-}
-
-function relevant5(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'Shovel Knight'),
-                    h('h2', '8-bit Art/Music'),
-                    h('h2', 'OST works on the NES')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function relevant6(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'Is 8-bit art relevant?'),
-                    h('h2', 'Star Versus'),
-                    h('img', {src: '/static/images/star-versus.jpg'})
-                ])
-            ])
-        ])
-    ]);
-}
-
-function attempt(state) {
-  return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'First Attempt'),
-                    h('h2', 'Sequencer'),
-                    h('h2', 'NES Samples')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function attempt2(state) {
-  return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'Second Attempt'),
-                    h('h2', [h('strike', 'Sequencer')]),
-                    h('h2', [h('strike', 'NES Samples')]),
-                    h('h2', 'Compiler')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function soundFromThe80s(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'Sound from the 1980s'),
-                    h('h2', 'The 2A03'),
-                    h('img', {src: '/static/images/2A07.jpg'})
-                ])
-            ])
-        ])
-    ]);
-}
-
-function soundFromThe80s2(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'Sound from the 1980s'),
-                    h('h2', 'The 2A03'),
-                    h('h2', 'Not a Terminator model.'),
-                    h('h2', 'Don\'t worry. Be happy.')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function soundFromThe80s3(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'Sound from the 1980s'),
-                    h('h2', 'The 2A03'),
-                    h('h2', 'The microprocessor of the NES.')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function soundFromThe80s4(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'Sound from the 1980s'),
-                    h('h2', 'The 2A03'),
-                    h('h2', '5 Channels')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function soundFromThe80s5(state) {
-    return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'Sound from the 1980s'),
-                    h('h2', 'The 2A03 Channels'),
-                    h('ul', [
-                        h('li', 'Square 1'),
-                        h('li', 'Square 2'),
-                        h('li', 'Triangle'),
-                        h('li', 'Noise'),
-                        h('li', 'Sampler')
-                    ])
-                ])
-            ])
-        ])
-    ]);
-}
-
-function thePlan(state) {
-  return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'The Plan'),
-                    h('h2', 'Make a beep')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function thePlan2(state) {
-  return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'The Plan'),
-                    h('h2', 'Make a beep'),
-                    h('h2', 'Lots of asm')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function thePlan3(state) {
-  return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'The Plan'),
-                    h('h2', 'Make a beep'),
-                    h('h2', 'Lots of asm'),
-                    h('h2', 'But it worked')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function thePlan3(state) {
-  return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'The Plan'),
-                    h('h2', 'Make a beep'),
-                    h('h2', 'Lots of asm'),
-                    h('h2', 'But it worked')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function thePlan4(state) {
-  return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'The Plan'),
-                    h('h2', 'Build a Sound Engine')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function thePlan5(state) {
-  return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'The Plan'),
-                    h('h2', 'Build a Sound Engine'),
-                    h('h2', 'ASM')
-                ])
-            ])
-        ])
-    ]);
-}
-
-function thePlan6(state) {
-  return h('div#app', [
-        h('div.main', [
-            h('div.row', [
-                h('div.item', [
-                    h('h1', 'The Plan'),
-                    h('h2', 'Build a Sound Engine'),
-                    h('h2', 'ASM'),
+                    h('h1', 'How?'),
+                    h('h2', 'ASM Sound Engine'),
                     h('h2', 'JS API')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function channels(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Channels')
                 ])
             ])
         ])
@@ -645,29 +373,64 @@ function technique4(state) {
     ]);
 }
 
-function demos(state) {
+function theFuture(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
                 h('div.item', [
-                    h('h1', 'Demos')
+                    h('h1', 'The Future')
                 ])
             ])
         ])
     ]);
 }
 
-function photoSources(state) {
+function theFuture2(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
                 h('div.item', [
-                    h('h1', 'Photo Sources'),
-                    h('ul', [
-                        h('li', [
-                            h('a', {href: 'http://commons.wikimedia.org/wiki/File:RP2A07.jpg'}, '2A03 by Miguel Durán')
-                        ])
-                    ])
+                    h('h1', 'The Future'),
+                    h('h2', 'NES Assembler in JS')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function theFuture3(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'The Future'),
+                    h('h2', 'NES Assembler in JS'),
+                    h('h2', 'Web UI Tools')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function help(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'mike@js.la'),
+                    h('h2.twitter', '@mmatuzak')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function demos(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Demos')
                 ])
             ])
         ])

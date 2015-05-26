@@ -15,10 +15,12 @@ body {
 
 h1 {
     font-size: 4em;
+    margin-left: 20px;
 }
 
 li, p, h2 {
     font-size: 3em;
+    margin-left: 20px;
 }
 
 .row img {
@@ -34,6 +36,6 @@ li, p, h2 {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
