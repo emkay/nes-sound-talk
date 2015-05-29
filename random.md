@@ -8,7 +8,7 @@ The reason I wanted to do this might be evident. I __like__ the chip tune sound 
 
 # How
 
-In order to do this I first needed to get familiar with how the NES produced sound. This meant leaning about the 2A03 microprocessor that is used, and how to tell it to make sounds. After a lot of reading I was able to get a __beep__ to happen. After that I went through a tutorial on the NESDEV forums where you build a sound engine in assembler. When I was done with that I had a nice little sound engine to write an API to.
+In order to do this I first needed to get familiar with how the NES produced sound. This meant learning about the 2A03 microprocessor that is used, and how to tell it to make sounds. After a lot of reading I was able to get a __beep__ to happen. After that I went through a tutorial on the NESDEV forums where you build a sound engine in assembler. When I was done with that I had a nice little sound engine to write an API to.
 
 # Sound Channels
 

@@ -8,5 +8,5 @@ var tri = song.triangle;
     tri([note]).timing(1/4);
 });
 
-song.done()
+song.done();
 song.write();

@@ -8,5 +8,5 @@ var sq = song.square1;
     sq([note]).timing(1/4).duty(d);
 });
 
-song.done()
+song.done();
 song.write();

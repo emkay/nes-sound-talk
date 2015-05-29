@@ -40,5 +40,5 @@ var drums = [
 
 noise(drums);
 
-song.done()
+song.done();
 song.write();

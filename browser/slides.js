@@ -9,13 +9,18 @@ var slides = [
     theNes,
     goal,
     goal2,
+    goal3,
     why,
     why2,
     why3,
     why4,
+    why5,
     how,
     how2,
+    how3,
     channels,
+    channels2,
+    channels3,
     square,
     square2,
     squareDemo,
@@ -30,8 +35,7 @@ var slides = [
     theFuture,
     theFuture2,
     theFuture3,
-    help,
-    demos
+    help
 ];
 
 console.log('How many slides: ', slides.length);
@@ -150,12 +154,25 @@ function why4(state) {
                     h('h1', 'Why?'),
                     h('h2', 'Music'),
                     h('h2', 'Nostalgia'),
-                    h('h2', 'JavaScript')
+                    h('h2', 'Browsers')
                 ])
             ])
         ])
     ]);
 }
+
+function why5(state) {
+   return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Fun')
+                ])
+            ])
+        ])
+    ]);
+}
+
 
 function goal(state) {
    return h('div#app', [
@@ -183,6 +200,19 @@ function goal2(state) {
  
 }
 
+function goal3(state) {
+   return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'Using JavaScript')
+                ])
+            ])
+        ])
+    ]);
+ 
+}
+
 function how(state) {
     return h('div#app', [
         h('div.main', [
@@ -196,6 +226,20 @@ function how(state) {
 }
 
 function how2(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+                    h('h1', 'How?'),
+                    h('h2', 'Reading a lot'),
+                    h('h2', 'Writing a lot')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function how3(state) {
     return h('div#app', [
         h('div.main', [
             h('div.row', [
@@ -221,6 +265,38 @@ function channels(state) {
     ]);
 }
 
+function channels2(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+        h('h1', 'Square'),
+        h('h1', 'Square 2'),
+        h('h1', 'Triangle'),
+        h('h1', 'Noise'),
+        h('h1', 'Sampler')
+                ])
+            ])
+        ])
+    ]);
+}
+
+function channels3(state) {
+    return h('div#app', [
+        h('div.main', [
+            h('div.row', [
+                h('div.item', [
+        h('h1', 'Square'),
+        h('h1', 'Square 2'),
+        h('h1', 'Triangle'),
+        h('h1', 'Noise'),
+        h('h1', [h('strike', 'Sampler')])
+                ])
+            ])
+        ])
+    ]);
+}
+
 function square(state) {
     return h('div#app', [
         h('div.main', [
@@ -229,6 +305,7 @@ function square(state) {
                     h('h1', 'Square'),
                     h('h2', '54.6 Hz to 12.4 KHz'),
                     h('h2', 'Duty Cycle'),
+                    h('h2', 'Volume Envelopes'),
                     h('h2', 'Frequency Sweeps')
                 ])
             ])
@@ -244,6 +321,7 @@ function square2(state) {
                     h('h1', 'Square'),
                     h('h2', '54.6 Hz to 12.4 KHz'),
                     h('h2', 'Duty Cycle'),
+                    h('h2', 'Volume Envelopes'),
                     h('h2', [h('strike', 'Frequency Sweeps')])
                 ])
             ])
@@ -418,7 +496,8 @@ function help(state) {
             h('div.row', [
                 h('div.item', [
                     h('h1', 'mike@js.la'),
-                    h('h2.twitter', '@mmatuzak')
+                    h('h2.twitter', '@mmatuzak'),
+                    h('h2', 'npm i nesly-sound')
                 ])
             ])
         ])
