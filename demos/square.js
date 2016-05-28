@@ -1,12 +1,13 @@
-var Song = require('nesly-sound');
-var song = Song();
+const Song = require('nesly-sound')
+const song = Song()
 
-var sq = song.square1;
+const sq = song.square1
+const octaves = [2, 3, 4, 5, 6, 7, 8]
 
-[2,3,4,5,6,7,8].forEach(function (o) {
-    var note = 'C' + o;
-    sq([note]).timing(1/4);
-});
+octaves.forEach((o) => {
+  const note = 'C' + o
+  sq([note]).timing(1 / 4)
+})
 
 song.done()
-song.write();
+song.write()

@@ -1,15 +1,12 @@
-var ns = require('nesly-sound');
+const ns = require('nesly-sound')
 
-var square = ns.square;
-var square2 = ns.square2;
-var triangle = ns.triangle;
-var noise = ns.noise;
+const square = ns.square
 
-var CMajor = [
-    'C4', 'E4', 'G4'
-];
+const CMajor = [
+  'C4', 'E4', 'G4'
+]
 
-square(CMajor);
+square(CMajor)
 
-ns.done();
-ns.write();
+ns.done()
+ns.write()

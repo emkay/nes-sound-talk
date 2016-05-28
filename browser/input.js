@@ -1,19 +1,17 @@
-var mercury = require('mercury');
-var Keyboard = require('frp-keyboard');
-var keycode = require('keycode');
-var computed = require('observ/computed');
+const mercury = require('mercury')
+const Keyboard = require('frp-keyboard')
+const keycode = require('keycode')
+const computed = require('observ/computed')
 
-function createInput() {
-    var keyboard = Keyboard();
-    var changeSlide = mercury.input();
+function createInput () {
+  const keyboard = Keyboard()
+  let changeSlide = mercury.input()
 
-    console.log(keyboard);
-    changeSlide = computed([keyboard.keyDown], function (num) {
-        console.log(keycode(num));
-        return keycode(num) || 'void';
-    });
+  changeSlide = computed([keyboard.keyDown], (num) => {
+    return keycode(num) || 'void'
+  })
 
-    return changeSlide;
+  return changeSlide
 }
 
-module.exports = createInput;
+module.exports = createInput

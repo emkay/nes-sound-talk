@@ -5,7 +5,7 @@
   "description": "NES Sound Talk",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "standard",
     "build-js": "browserify browser/main.js > static/js/bundle.js",
     "watch-js": "watchify browser/main.js -o static/js/bundle.js -dv",
     "start-dev": "npm run watch-js & nodemon server",
@@ -38,6 +38,7 @@
   "devDependencies": {
     "browserify": "^10.0.0",
     "nodemon": "^1.3.7",
+    "standard": "^7.1.1",
     "watchify": "^3.2.1"
   }
 }

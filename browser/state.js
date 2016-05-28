@@ -1,21 +1,21 @@
-var mercury = require('mercury');
-var extend = require('xtend');
+const mercury = require('mercury')
+const extend = require('xtend')
 
-var Defaults = {
-    slide: 0,
-    title: "Node.js on the Road",
-    slideLen: 0
-};
-
-function state(events, initialState) {
-    var state = extend(Defaults, initialState);
-
-    return mercury.hash({
-        events: events,
-        slide: mercury.value(state.slide),
-        title: mercury.value(state.title),
-        slideLen: mercury.value(state.slideLen)
-    });
+const Defaults = {
+  slide: 0,
+  title: '',
+  slideLen: 0
 }
 
-module.exports = state;
+function state (events, initialState) {
+  const state = extend(Defaults, initialState)
+
+  return mercury.hash({
+    events: events,
+    slide: mercury.value(state.slide),
+    title: mercury.value(state.title),
+    slideLen: mercury.value(state.slideLen)
+  })
+}
+
+module.exports = state

@@ -1,24 +1,23 @@
-require('press-start-font')();
-var mercury = require('mercury');
-var Input = require('./input');
-var State = require('./state');
-var Slides = require('./slides');
-var Update = require('./update');
-var h = mercury.h;
+require('press-start-font')()
+const mercury = require('mercury')
+const Input = require('./input')
+const State = require('./state')
+const Slides = require('./slides')
+const Update = require('./update')
+// const h = mercury.h
 
-function render(state) {
-    var slide = Slides.render(state);
-    return slide(state);
+function render (state) {
+  const slide = Slides.render(state)
+  return slide(state)
 }
 
-function createApp() {
+function createApp () {
+  const events = Input()
+  const state = State(events, {slideLen: Slides.len})
+  events(Update.changeSlide.bind(null, state))
 
-    var events = Input();
-    var state = State(events, {slideLen: Slides.len});
-    events(Update.changeSlide.bind(null, state));
-
-    return state;
+  return state
 }
 
-var state = window.state = createApp();
-mercury.app(document.body, state, render);
+const state = window.state = createApp()
+mercury.app(document.body, state, render)
