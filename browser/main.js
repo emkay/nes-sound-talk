@@ -1,5 +1,5 @@
 require('press-start-font')()
-require('../static/css/main.css');
+require('../static/css/main.css')
 
 const mercury = require('mercury')
 const Input = require('./input')
