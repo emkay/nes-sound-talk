@@ -12,6 +12,9 @@ function changeSlide (state, direction) {
       state.slide.set(state.slide() - 1)
     }
   }
+
+  const percent = state.slide() === 0 ? 0 : (state.slide() / state.slideLen()) * 100
+  state.percent.set(percent)
 }
 
 module.exports = {
