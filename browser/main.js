@@ -1,10 +1,11 @@
 require('press-start-font')()
+require('../static/css/main.css');
+
 const mercury = require('mercury')
 const Input = require('./input')
 const State = require('./state')
 const Slides = require('./slides')
 const Update = require('./update')
-// const h = mercury.h
 
 function render (state) {
   const slide = Slides.render(state)
